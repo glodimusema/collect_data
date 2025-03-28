@@ -48,7 +48,7 @@ function pdf_detail_enquete_excel(Request $request)
         ->orderBy("tdata_enquete.created_at", "asc")
         ->get();   
 
-    // Vérifiez que les deux tableaux ont la même longueur
+    // Vérifiez que les deux tableaux ont la même longueur (logueur egale)
     if ($data)
     {
         for ($i = 0; $i < count($data); $i++) {
